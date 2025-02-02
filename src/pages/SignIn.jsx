@@ -52,10 +52,8 @@ const SignIn = () => {
           >
             <Input.Password placeholder="Введите пароль" />
           </Form.Item>
-          <div className="text-left mb-4">
-            <a href="/signin" className="text-sm text-blue-500 hover:underline">
-              Вход
-            </a>
+          <div className="text-left mb-4" onClick={() => navigate("/login")}>
+            <a className="text-sm text-blue-500 hover:underline">Вход</a>
           </div>
           <div className="text-center">
             <Button type="primary" htmlType="submit">
