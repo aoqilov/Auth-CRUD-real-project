@@ -67,6 +67,7 @@ const DropdownMethod = ({ value }) => {
           onConfirm={() => mutate(value.id)}
           cancelText="Нет"
           okText="Да"
+          placement="leftBottom"
         >
           <span style={{ color: "red" }}>Удалить</span>
         </Popconfirm>

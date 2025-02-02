@@ -29,7 +29,7 @@ const AddModal = () => {
       setLoading(false);
       setOpen(false); // Modalni yopish uchun
       queryClient.invalidateQueries(["dataTable"]);
-      openNotification("success", "Login success");
+      openNotification("success", "Компания успешно сохранена");
     },
     onError: (error) => {
       openNotification("error", error.message);
